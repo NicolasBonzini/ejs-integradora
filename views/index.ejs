@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pimienta & sal</title>
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <!-- Navbar (sit on top) -->
+  <%- include ('./partials/navbar.ejs') %>
+    <!-- Header -->
+    <%- include ('./partials/header.ejs') %>
+
+      <!-- Page content -->
+      <div class="ps-content">
+        <!-- About Section -->
+        <%- include('./partials/about.ejs') %>
+      </div>
+
+      <hr />
+      <!-- Menu Section -->
+      <%- include('./partials/menu.ejs', { menu }) %>
+        <!-- Footer -->
+        <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

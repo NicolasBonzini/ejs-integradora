@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head.ejs') %> 
+  <body>
+
+    <!-- Navbar (sit on top) -->
+  <%- include ('./partials/navbar.ejs') %>
+  <!-- Header -->
+  <%- include ('./partials/header.ejs') %>
+
+    <!-- Page content -->
+    <div class="ps-content">
+      <!-- About Section -->
+      <%- include('./partials/about.ejs') %>
+    </div>
+
+    <hr />
+    <!-- Menu Section -->
+    <%- include('./partials/menu.ejs', { menu }) %>
+      <!-- Footer -->
+      <%- include('./partials/footer.ejs') %>
+  </body>
+</html>

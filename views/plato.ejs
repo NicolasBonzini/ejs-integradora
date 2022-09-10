@@ -1,0 +1,22 @@
+<%- include('./partials/head') %>
+    <%- include('./partials/navbar') %>
+
+
+        <% for(let plato of menu){ %>
+            <% if(plato.id===id){ %>
+
+                <div class="plato">
+                    <h2>
+                        <%= plato.nombre %>
+                    </h2>
+                    <p class="ps-text-grey">
+                        <%= plato.descripcion %>
+                    </p>
+                    <p>
+                        <%= plato.precio %>
+                    </p>
+                    <img class="ps-image" src="<%= plato.img %> " alt="" width="400" height="500">
+                </div>
+                <% } %>
+                    <% } %>
+                        <%- include('./partials/footer') %>
